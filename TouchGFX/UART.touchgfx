@@ -1,0 +1,305 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "GUI",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 272
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Sound4",
+            "X": 314,
+            "Y": 201,
+            "Width": 148,
+            "Height": 50,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 10,
+                "TextId": "__SingleUse_ANGA",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "ImageReleased": "button_large_released.png",
+                "ImagePressed": "button_large_pressed.png"
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Sound3",
+            "X": 19,
+            "Y": 201,
+            "Width": 148,
+            "Height": 50,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 10,
+                "TextId": "__SingleUse_OR8U",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "ImageReleased": "button_large_released.png",
+                "ImagePressed": "button_large_pressed.png"
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Sound2",
+            "X": 314,
+            "Y": 21,
+            "Width": 148,
+            "Height": 50,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 10,
+                "TextId": "__SingleUse_JFCY",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "ImageReleased": "button_large_released.png",
+                "ImagePressed": "button_large_pressed.png"
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Sound1",
+            "X": 19,
+            "Y": 21,
+            "Width": 148,
+            "Height": 50,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 10,
+                "TextId": "__SingleUse_XC2D",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "ImageReleased": "button_large_released.png",
+                "ImagePressed": "button_large_pressed.png"
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Stop",
+            "X": 167,
+            "Y": 111,
+            "Width": 147,
+            "Height": 50,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 10,
+                "TextId": "__SingleUse_77FM",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "ImageReleased": "button_large_released.png",
+                "ImagePressed": "button_large_pressed.png"
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Stop",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Stop"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "StopSound"
+            }
+          },
+          {
+            "InteractionName": "PlaySound1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Sound1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "PlaySound1"
+            }
+          },
+          {
+            "InteractionName": "PlaySound2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Sound2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "PlaySound2"
+            }
+          },
+          {
+            "InteractionName": "PlaySound3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Sound3"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "PlaySound3"
+            }
+          },
+          {
+            "InteractionName": "PlaySound4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Sound4"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "PlaySound4"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "UART",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "GUI",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 272
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommand": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommand": "make -f ../gcc/Makefile flash -j8",
+    "FlashTargetIntCommandOverride": "make -f ../gcc/Makefile intflash -j8",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F7",
+    "SubFamily": "STM32F7x6",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../STM32F746G_DISCO.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts",
+      "Video"
+    ]
+  },
+  "Version": "4.25.0",
+  "CreatedBy": "4.25.0"
+}
