@@ -1,8 +1,24 @@
-# STM32F746G_DISCO TBS.
+# STM32 UART Communication Project 🎵💡
+![imageHMI](https://github.com/user-attachments/assets/903702f8-9745-4a20-a13e-12f0ed042860)
 
-The default IDE is set to STM32CubeIDE, to change IDE open the STM32F746G_DISCO.ioc with STM32CubeMX and select from the supported IDEs (EWARM from version 8.50.9, MDK-ARM, and STM32CubeIDE). Supports flashing of the STM32F746G_DISCO board directly from TouchGFX Designer using GCC and STM32CubeProgrammer.Flashing the board requires STM32CubeProgrammer which can be downloaded from the ST webpage. 
+This project demonstrates **UART communication** between an **STM32F103C8T6 Blue Pill** board and an **STM32F746 Discovery** board.  
+ **This Code is Related to STM32F746 Discovery Board**
+---
 
-This TBS is configured for 272 x 480 pixels 16bpp screen resolution.  
-
-Performance testing can be done using the GPIO pins designated with the following signals: VSYNC_FREQ  - Pin PB4(D3), RENDER_TIME - Pin PC6(D1), FRAME_RATE  - Pin PC7(D0), MCU_ACTIVE  - Pin PG6(D2)
+- The **STM32F7 Discovery** board hosts a **GUI (HMI)** that sends commands via UART.  
+- The **STM32F1 Blue Pill** board receives the commands and:  
+  - Plays sound through a buzzer 🎶  
+  - Controls an LED that "dances" with the sound 💡  
+---
+### Features
+- 4 distinct sounds at different frequencies  
+- Ability to stop the sound  
+- LED animation synchronized with the buzzer  
+ 
+---
+### UART Settings
+- **USART6** is enabled for communication  
+---
+### Demo
+📺 Full project demo is available on the [Sly Fox Electronics YouTube Channel](https://www.youtube.com/@slyfoxelectronics).
  
